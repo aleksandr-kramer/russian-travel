@@ -1,0 +1,10 @@
+.footer__menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .footer__menu {
+    padding-bottom: 48px;
+  }
+}
