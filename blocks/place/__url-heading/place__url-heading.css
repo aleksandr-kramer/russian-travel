@@ -4,5 +4,9 @@
   font-size: 12px;
   line-height: 12px;
   color: #aaaaaa;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 12px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }

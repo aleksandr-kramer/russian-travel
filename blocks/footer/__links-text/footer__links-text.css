@@ -4,6 +4,10 @@
   font-size: 16px;
   line-height: 18px;
 }
+.footer__links-text:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
 @media screen and (max-width: 767px) {
   .footer__links-text {
     font-size: 24px;

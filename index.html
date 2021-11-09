@@ -11,15 +11,15 @@
     <div class="page__container">
       <header class="header">
         <div class="header__logo"></div>
-        <ul class="header__lang-link">
-          <li>
+        <ul class="header__lang-items">
+          <li class="header__lang-item">
             <a
               class="header__lang-link-text header__lang-link-text_active"
               href="#"
               >Ru</a
             >
           </li>
-          <li>
+          <li class="header__lang-item">
             <a class="header__lang-link-text" href="#">En</a>
           </li>
         </ul>
@@ -30,12 +30,14 @@
           <p class="lead__subtitle">
             Настоящая страна не в выпусках новостей, а&nbsp;здесь.
           </p>
+          <figure class="lead__figure">
           <img
             class="lead__image"
             src="./images/lead-polka.jpg"
             alt="Путешествия по России"
           />
-          <p class="lead__caption">ваша полка — верхняя</p>
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+        </figure>
         </section>
         <section class="intro">
           <h2 class="intro__title">Чего мы там не&nbsp;видели?</h2>
@@ -54,15 +56,24 @@
           </p>
 
           <ul class="intro__list">
-            <li class="intro__list-text">Часовых поясов 11</li>
             <li class="intro__list-text">
-              Объектов природного наследия ЮНЕСКО 12
+              Часовых поясов <span class="intro__list-text-regular">11</span>
             </li>
             <li class="intro__list-text">
-              Объектов культурного наследия ЮНЕСКО 16
+              Объектов природного наследия ЮНЕСКО
+              <span class="intro__list-text-regular">12</span>
             </li>
-            <li class="intro__list-text">Природных заповедников 105</li>
-            <li class="intro__list-text">Аэропортов 241</li>
+            <li class="intro__list-text">
+              Объектов культурного наследия ЮНЕСКО
+              <span class="intro__list-text-regular">16</span>
+            </li>
+            <li class="intro__list-text">
+              Природных заповедников
+              <span class="intro__list-text-regular">105</span>
+            </li>
+            <li class="intro__list-text">
+              Аэропортов <span class="intro__list-text-regular">241</span>
+            </li>
           </ul>
         </section>
         <section class="photo-grid">
@@ -70,8 +81,8 @@
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
-                src="./images/photo-grid-arisa.jpg"
-                alt="Ариса"
+                src="./images/photo-grid-train.jpg"
+                alt="Поезд"
               />
             </li>
             <li class="photo-grid__item">
@@ -84,15 +95,29 @@
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
-                src="./images/photo-grid-baikal-2.jpg"
-                alt="Байкал - 2"
+                src="./images/photo-grid-tuman.jpg"
+                alt="Туман"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/photo-grid-sochi.jpg"
+                alt="Сочи"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/photo-grid-arisa.jpg"
+                alt="Ариса"
               />
             </li>
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
                 src="./images/photo-grid-baikal.jpg"
-                alt="<Байкал>"
+                alt="Байкал - 1"
               />
             </li>
             <li class="photo-grid__item">
@@ -105,8 +130,8 @@
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
-                src="./images/photo-grid-ergaki.jpg"
-                alt="Эргаки"
+                src="./images/photo-grid-kondratiev.jpg"
+                alt="Кондратьев"
               />
             </li>
             <li class="photo-grid__item">
@@ -126,29 +151,15 @@
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
-                src="./images/photo-grid-kondratiev.jpg"
-                alt="Кондратьев"
+                src="./images/photo-grid-baikal-2.jpg"
+                alt="Байкал - 2"
               />
             </li>
             <li class="photo-grid__item">
               <img
                 class="photo-grid__image"
-                src="./images/photo-grid-sochi.jpg"
-                alt="Сочи"
-              />
-            </li>
-            <li class="photo-grid__item">
-              <img
-                class="photo-grid__image"
-                src="./images/photo-grid-train.jpg"
-                alt="Поезд"
-              />
-            </li>
-            <li class="photo-grid__item">
-              <img
-                class="photo-grid__image"
-                src="./images/photo-grid-tuman.jpg"
-                alt="Туман"
+                src="./images/photo-grid-ergaki.jpg"
+                alt="Эргаки"
               />
             </li>
           </ul>
@@ -158,7 +169,9 @@
             <h2 class="place__title">Куршская коса</h2>
             <div class="place__website">
               <p class="place__url-heading">URL</p>
-              <a class="place__link" href="http://park-kosa.ru">park-kosa.ru</a>
+              <a class="place__link" href="http://park-kosa.ru" target="_blank"
+                >park-kosa.ru</a
+              >
             </div>
             <img
               class="place__image"
@@ -190,6 +203,7 @@
               <a
                 class="place__link"
                 href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+                target="_blank"
                 >National Geographic</a
               >
             </div>
@@ -223,6 +237,7 @@
               <a
                 class="place__link"
                 href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+                target="_blank"
                 >Facebook</a
               >
             </div>
@@ -253,7 +268,10 @@
             <h2 class="place__title">Зимний Байкал</h2>
             <div class="place__website">
               <p class="place__url-heading">URL</p>
-              <a class="place__link" href="https://vk.com/baikalmile"
+              <a
+                class="place__link"
+                href="https://vk.com/baikalmile"
+                target="_blank"
                 >https://vk.com/baikalmile</a
               >
             </div>
@@ -283,11 +301,15 @@
             <h2 class="place__title">Карелия</h2>
             <div class="place__website">
               <p class="place__url-heading">URL</p>
-              <a class="place__link" href="http://vodlozero.ru"
+              <a class="place__link" href="http://vodlozero.ru" target="_blank"
                 >http://vodlozero.ru/</a
               >
             </div>
-            <img class="place__image" src="./images/place-karelia.jpg" />
+            <img
+              class="place__image"
+              src="./images/place-karelia.jpg"
+              alt="Карелия"
+            />
             <div class="place__paragraph">
               <p class="place__text">
                 Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
@@ -307,6 +329,7 @@
           <a
             class="cover__overlay"
             href="https://stampsy.com/na-elektrichkakh-do-baikala"
+            target="_blank"
           >
             <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
             <p class="cover__subtitle">
@@ -320,35 +343,48 @@
         <nav class="footer__menu">
           <ul class="footer__menu-items">
             <li class="footer__links-item">
-              <a class="footer__links-text" href="https://yandex.ru/maps"
+              <a
+                class="footer__links-text"
+                href="https://yandex.ru/maps"
+                target="_blank"
                 >Карты</a
               >
             </li>
             <li class="footer__links-item">
-              <a class="footer__links-text" href="https://yandex.ru/pogoda"
+              <a
+                class="footer__links-text"
+                href="https://yandex.ru/pogoda"
+                target="_blank"
                 >Погода</a
               >
             </li>
             <li class="footer__links-item">
-              <a class="footer__links-text" href="https://rasp.yandex.ru"
+              <a
+                class="footer__links-text"
+                href="https://rasp.yandex.ru"
+                target="_blank"
                 >Расписание</a
               >
             </li>
             <li class="footer__links-item">
-              <a class="footer__links-text" href="https://calendar.yandex.ru"
+              <a
+                class="footer__links-text"
+                href="https://calendar.yandex.ru"
+                target="_blank"
                 >Календарь</a
               >
             </li>
             <li class="footer__links-item">
-              <a class="footer__links-text" href="https://travel.yandex.ru"
+              <a
+                class="footer__links-text"
+                href="https://travel.yandex.ru"
+                target="_blank"
                 >Путешествия</a
               >
             </li>
           </ul>
         </nav>
-        <div class="footer__copyrite">
-          <p class="footer__copyrite-author">&copy; Александр Крамер</p>
-        </div>
+        <p class="footer__copyright-author">&copy; Александр Крамер</p>
       </footer>
     </div>
   </body>
